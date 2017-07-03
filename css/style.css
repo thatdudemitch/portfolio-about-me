@@ -23,11 +23,12 @@ header {
     color: #ccc;
 }
 
-.landing {
+#landing {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
+    position: relative;
 }
 
 h1 {
@@ -40,6 +41,33 @@ h1 {
     line-height: 2.2em;
 }
 
+.transition {
+    position: absolute;
+    margin-bottom: 50px;
+    bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 1.2em;
+    line-height: 3em;
+}
+
+.transition a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #ccc;
+    box-sizing: border-box;
+    color: #003340;
+    border-radius: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+.transition a:hover {
+    background: #003340;
+    color: #ccc ;
+    padding: 20px 25px;
+}
 /* Span on name w/ keyframes */
 #name {
     color: #ff6052;
@@ -85,6 +113,10 @@ h1 {
     width: 100%;
 }
 
+#projects {
+    background: #eceef0;
+}
+
 .clearfix {
     content: '';
     display: table;
@@ -99,7 +131,7 @@ ul {
 
 li {
     padding: 16px 32px;
-    width: 30%;
+    width: 22%;
     box-sizing: border-ccc;
     display: inline-block;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -173,10 +205,5 @@ li {
     color: #cc0000;
 }
 
-
-
-#projects {
-    background: #fff;
-}
 
 
