@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Roboto:400,700');
+
+body {
+    background: #003340;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+header {
+    margin-top: 80px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+/* M logo */
+#logo {
+    color: #ccc;
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    font-size: 4em;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+h1 {
+    color: #ccc;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+/* Span on name w/ keyframes */
+#name {
+    color: #ff6052;
+    animation: hue 5s infinite;
+}
+
+@keyframes hue {
+    0% {
+        color: #ff6052;
+    }
+    33% {
+        color: #ffbf05;
+    }
+    66% {
+        color: #15cd37;
+    }
+    99% {
+        color: #ff6052;
+    }
+}
+
+.projects {
+    background: #fff;
+    height: 400px;
+    width: 100%;
+}
+
+
