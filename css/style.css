@@ -6,29 +6,33 @@ body {
     color: #ccc;
     font-family: 'Lora', serif;
     font-size: 16px;
-    line-height: 2.5em;
+    line-height: 2.2em;
 }
 
 header {
-    margin-top: 80px;
-    margin-left: 50px;
-    position: absolute;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center; 
+}
+
+.box-size {
+    box-sizing: border-box;
 }
 
 /* M logo */
 #logo {
     font-family: 'Monoton', cursive;
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 0;
     text-decoration: none;
     font-size: 4em;
     color: #ccc;
 }
 
 #landing {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -36,6 +40,7 @@ header {
 }
 
 h1 {
+    margin-top: -75px;
     text-shadow: 0px 3px 0px #222;
     text-align: center;
     text-transform: uppercase;
@@ -100,19 +105,9 @@ h1 {
     }
 }
 
-
-.content {
-    width: 75%;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
 /*************************** 
     Skills section 
 ***************************/
-
 
 #skills {
     background: rgba(0, 0, 0, 0.3);
@@ -120,7 +115,13 @@ h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .skills-list {
@@ -129,19 +130,24 @@ h1 {
 
 #self {
     border-radius: 50%;
-    width: 250px;
+    width: 200px;
     height: auto;
-    margin: 0 0 50px;
+    margin-bottom: 40px;
+    transition: all 1s ease-in-out;
+}
+
+#self:hover {
+    transform: rotate(180deg);
 }
 
 .description {
-    font-size: 1.25em;
-    margin-bottom: 40px;
+    font-size: 1.05em;
+    margin-bottom: 30px;
 }
 
 h2 {
     font-size: 1.7em;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     letter-spacing: 2px;
     border-bottom: 9px solid #ccc;
     text-transform: uppercase;
@@ -152,22 +158,22 @@ h2 {
 ul {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
 }
 
 li {
-    padding: 16px 32px;
+    padding: 1px 0;
+    margin-bottom: 20px;
     width: 15%;
-    box-sizing: border-ccc;
     display: inline-block;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 /* Skills List */
-#html, #css, #js, #react
+#html, #css, #js, #react,
 #postgres, #node, #ruby {
     transition: all 500ms ease-in-out;
 }
@@ -251,11 +257,8 @@ Projects section
     background: #eceef0;
     width: 100%;
     height: 100vh;
-}
-
-#projects a {
-    float: left;
-    text-decoration: none;
+    overflow: auto;
+    
 }
 
 .inverted {
@@ -265,16 +268,23 @@ Projects section
 }
 
 .portfolio {
-    width: 390px;
+    float: left;
+    width: 33%;
+}
+
+.portfolio-image {
+    max-width: 100%;
     height: auto;
 }
 
 .portfolio-title {
-    font-size: 1.05em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.15em;
     color: #003340;
     text-transform: uppercase;
     line-height: 1.4em;
     margin-bottom: 50px;
+    letter-spacing: 3px;
 }
 
 .clearfix {
@@ -282,5 +292,3 @@ Projects section
     display: table;
     clear: both;
 }
-
-
