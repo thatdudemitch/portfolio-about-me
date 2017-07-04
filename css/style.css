@@ -45,6 +45,7 @@ h1 {
     line-height: 2.2em;
 }
 
+/* Arrow button */
 .transition {
     position: absolute;
     margin-bottom: 50px;
@@ -72,6 +73,7 @@ h1 {
     color: #ccc ;
     padding: 20px 25px;
 }
+
 /* Span on name w/ keyframes */
 #name {
     color: #ff6052;
@@ -97,13 +99,20 @@ h1 {
         color: #ff6052;
     }
 }
+
+
 .content {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     padding: 40px;
     text-align: center;
     box-sizing: border-box;
 }
+
+/*************************** 
+    Skills section 
+***************************/
+
 
 #skills {
     background: rgba(0, 0, 0, 0.3);
@@ -127,26 +136,17 @@ h1 {
 
 .description {
     font-size: 1.25em;
+    margin-bottom: 40px;
 }
 
 h2 {
     font-size: 1.7em;
-    margin: 40px auto 20px;
+    margin: 0 auto 20px;
     letter-spacing: 2px;
     border-bottom: 9px solid #ccc;
     text-transform: uppercase;
     font-family: 'Pathway Gothic One', sans-serif;
     width: 15%;
-}
-
-#projects {
-    background: #eceef0;
-}
-
-.clearfix {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 ul {
@@ -166,6 +166,7 @@ li {
     font-weight: bold;
 }
 
+/* Skills List */
 #html, #css, #js, #react
 #postgres, #node, #ruby {
     transition: all 500ms ease-in-out;
@@ -241,5 +242,44 @@ li {
     color: #cc0000;
 }
 
+
+/*************************** 
+Projects section 
+***************************/
+
+#projects {
+    background: #eceef0;
+    width: 100%;
+    height: 100vh;
+}
+
+#projects a {
+    float: left;
+    text-decoration: none;
+}
+
+.inverted {
+    color: #003340;
+    border-color: #003340;
+}
+
+.portfolio {
+    width: 390px;
+    height: auto;
+}
+
+.portfolio-title {
+    font-size: 1.05em;
+    color: #003340;
+    /*text-transform: uppercase;*/
+    line-height: 1.4em;
+    margin-bottom: 50px;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
 
 
