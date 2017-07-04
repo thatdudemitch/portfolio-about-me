@@ -6,7 +6,7 @@ body {
     color: #ccc;
     font-family: 'Lora', serif;
     font-size: 16px;
-    line-height: 1.7em;
+    line-height: 2.5em;
 }
 
 header {
@@ -64,7 +64,7 @@ h1 {
 }
 
 .transition a:hover {
-    background: #003340;
+    background: rgba(255, 255, 255, 0);
     color: #ccc ;
     padding: 20px 25px;
 }
@@ -107,10 +107,25 @@ h1 {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .skills-list {
     width: 100%;
+}
+
+.description {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin: 100px auto 30px;
+    letter-spacing: 2px;
+    border-bottom: 9px solid #ccc;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    width: 15%;
 }
 
 #projects {
@@ -131,16 +146,16 @@ ul {
 
 li {
     padding: 16px 32px;
-    width: 22%;
+    width: 15%;
     box-sizing: border-ccc;
     display: inline-block;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 1px;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
-#html, #css, #js,
+#html, #css, #js, #react
 #postgres, #node, #ruby {
     transition: all 500ms ease-in-out;
 }
@@ -173,6 +188,16 @@ li {
 #js:hover {
     background-color: rgba(255, 255, 255, 0.1); 
     color: #e3a227;
+}
+
+#react {
+    border-bottom: 10px solid #61dafb;
+    color: #ccc;
+}
+
+#react:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #61dafb;
 }
 
 #node {
