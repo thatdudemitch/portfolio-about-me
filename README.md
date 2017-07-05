@@ -1,4 +1,4 @@
-### Portfolio About-Me
+# Portfolio
 
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/about-me-screenshot.png)
 
