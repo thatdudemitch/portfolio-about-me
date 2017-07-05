@@ -3,5 +3,6 @@ Mitchel Severe Portfolio Page. It can be viewed [here](https://thatdudemitch.git
 
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/about-me-screenshot.png)
 
+* HTML5
+* CSS3
 
-Used HTML / CSS / Flexbox  
