@@ -2,13 +2,13 @@
 
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/about-me-screenshot.png)
 
-### Technologies Used
+## Technologies Used
 
 * HTML5
 * CSS3
 
 
-### Keyframes Used For H1
+## Keyframes Used For H1
 
 ```
 /* Span on name w/ keyframes */
@@ -37,5 +37,11 @@
     }
 }
 ```
+
+## Future Improvements
+
+* Responsive Design
+* JavaScript Interactivity
+
 
 It can be viewed [here](https://thatdudemitch.github.io/portfolio-about-me/)
