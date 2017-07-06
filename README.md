@@ -2,11 +2,14 @@
 
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/about-me-screenshot.png)
 
+### Technologies Used
+
 * HTML5
 * CSS3
 
 
-### Keyframes code used for h1
+### Keyframes Used For H1
+
 ```
 /* Span on name w/ keyframes */
 #name {
