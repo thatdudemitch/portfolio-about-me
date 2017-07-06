@@ -1,5 +1,5 @@
 # Portfolio
-
+*Portfolio can be viewed [here](https://thatdudemitch.github.io/portfolio-about-me/)*
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/about-me-screenshot.png)
 
 ## Technologies Used
@@ -43,5 +43,8 @@
 * Responsive Design
 * JavaScript Interactivity
 
+### Created By
+`Mitchel Severe`
 
-It can be viewed [here](https://thatdudemitch.github.io/portfolio-about-me/)
+
+
