@@ -6,9 +6,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
-$font-stack-primary: 'Playfair Display', serif;
+
 $main-color: #0D0D0D;
 $secondary-color: #FFF;
+$accent-color: #7C7C7C;
+$accent-color-secondary: #8870FF;
+$behance-color: #0A44C7;
+$linkedin-color: #1178B2;
+$github-color: #F3CAB3;
+$gmail-color: #FF2222;
+
+$font-stack-logo: 'Monoton', cursive;
+$font-stack-primary: 'Helvetica', sans-serif;
+$font-stack-secondary: 'Playfair Display', serif;
 
 body {
   font-family: $font-stack-primary;
@@ -23,6 +33,7 @@ a {
 .vue-typer {
   .char {
     display: inline !important;
+    font-family: $font-stack-secondary;
   }
   
   .custom.caret {
@@ -40,4 +51,13 @@ a {
     color: $main-color;
     word-break: normal;
   }
+}
+
+.tabs {
+  display: inline;
+}
+
+.active {
+  color: $accent-color-secondary !important;
+  border-bottom: 4px solid $accent-color-secondary !important;
 }
