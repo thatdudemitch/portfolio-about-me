@@ -18,25 +18,64 @@
         </a>
       </div>
     </div>
+    <ul class="tabs">
+      <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
+      <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
+      <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
+    </ul>
     <div id="content">
-      <ul class="tabs">
-        <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
-        <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
-        <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
-      </ul>
       <div class="skills" v-if="this.activeItem === 'skills'">
-        <img src="../assets/images/api.png">
-        <img src="../assets/images/bootstrap.png">
-        <img src="../assets/images/css.png">
-        <img src="../assets/images/express.png">
-        <img src="../assets/images/html.png">
-        <img src="../assets/images/javascript.png">
-        <img src="../assets/images/nodejs.png">
-        <img src="../assets/images/postgres.png">
-        <img src="../assets/images/rails.png">
-        <img src="../assets/images/react.png">
-        <img src="../assets/images/sass.png">
-        <img src="../assets/images/vue.png">
+        <h2>These are my skills.</h2>
+        <div class="skills-icons">
+          <div>
+            <img src="../assets/images/api.png">
+            <span>API</span>
+          </div>
+          <div>
+            <img src="../assets/images/bootstrap.png">
+            <span>Bootstrap</span>
+          </div>
+          <div>
+            <img src="../assets/images/css.png">
+            <span>CSS3</span>
+          </div>
+          <div>
+            <img src="../assets/images/express.png">
+            <span>Express</span>
+          </div>
+          <div>
+            <img src="../assets/images/html.png">
+            <span>HTML5</span>
+          </div>
+          <div>
+            <img src="../assets/images/javascript.png">
+            <span>JavaScript</span>
+          </div>
+          <div>
+            <img src="../assets/images/nodejs.png">
+            <span>NodeJS</span>
+          </div>
+          <div>
+            <img src="../assets/images/postgres.png">
+            <span>PostgreSQL</span>
+          </div>
+          <div>
+            <img src="../assets/images/rails.png">
+            <span>Rails</span>
+          </div>
+          <div>
+            <img src="../assets/images/react.png">
+            <span>React</span>
+          </div>
+          <div>
+            <img src="../assets/images/sass.png">
+            <span>Sass/SCSS</span>
+          </div>
+          <div>
+            <img src="../assets/images/vue.png">
+            <span>Vue</span>
+          </div>
+        </div>
       </div>
       <div v-else-if="this.activeItem === 'web'">
         Web
@@ -78,7 +117,7 @@ export default {
 @import '../assets/scss/main.scss';
 
   .splash-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: $main-color;
     position: relative;
@@ -97,43 +136,49 @@ export default {
   }
 
   #content {
-    width: 100%;
-    height: 100vh;
-    background: #eee;
+    width: 100vw;
+    height: 80vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     h2 {
-      font-family: Helvetica;
-      font-weight: lighter;
+      font-size: 6vh;
     }
   }
 
   .skills {
-    width: 50%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    img {
-      width: 15%;
-      padding: 2%;
-      height: 100%;
-      margin-bottom: 20px;
-      filter: grayscale(100%);
-      cursor: pointer;
-      transition: 500ms;
-      &:hover {
-        filter: grayscale(0%);
+    align-items: center;
+    flex-direction: column;
+    .skills-icons {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div {
+        width: 16%;
+        padding: 2%;
+        text-align: center;
+        filter: grayscale(100%);
+        color: $accent-color;
+        &:hover {
+          filter: grayscale(0%);
+          color: $main-color;
+        }
+        span {
+          font-size: 1.7vh;
+          font-weight: bold;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 12px;
+          cursor: pointer;
+          transition: 500ms;
+        }
       }
     }
-  }
-  
-  p {
-    color: #FFF;
-  }
-
-  li {
-    transition: 500ms;
   }
   
   .arrow {
@@ -155,17 +200,14 @@ export default {
 
   .tabs {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 5% 0;
-    border-bottom: 1px solid 
+    width: 97vw;
+    margin: 2% 0;
+    color: $accent-color;
     li {
       list-style-type: none;
-      font-family: Helvetica;
-      font-weight: bold;
-      font-size: 2.2vh;
-      margin: 10px;
-      height: 25px;
+      font-size: 1.8vh;
+      height: 33px;
+      margin: 0 1%;
       cursor: pointer;
     }
   }
