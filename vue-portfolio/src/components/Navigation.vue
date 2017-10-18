@@ -55,7 +55,6 @@ export default {
   .link {
     margin-right: 30px;
     font-family: 'Helvetica', sans-serif;
-    font-weight: lighter;
     a {
       height: 25px;
       transition: 100ms ease-in-out;
@@ -65,13 +64,10 @@ export default {
 
   .scroll-nav {
     background-color: $secondary-color;
-    box-shadow: 0 5px 5px -6px $accent-color;
-    a {
-      color: $main-color;
-    }
+    box-shadow: 0 5px 5px -6px $main-color;
     span {
       a {
-        color: $main-color;
+        color: $accent-color-secondary;
         transition: 500ms ease-in-out;
         &:hover {
           transform: rotate(180deg);
@@ -82,7 +78,7 @@ export default {
     .link {
       a {
         &:hover {
-          border-bottom: 1px solid $main-color;
+          border-bottom: 3px solid $accent-color-secondary; 
         }
       }
     }
@@ -90,9 +86,6 @@ export default {
 
   .top-nav {
     background-color: $main-color;
-    a {
-      color: $secondary-color;
-    }
     span a {
       color: $secondary-color;
       transition: 500ms ease-in-out;
@@ -103,8 +96,9 @@ export default {
     }
     .link {
       a {
+      color: $secondary-color;  
         &:hover {
-          border-bottom: 1px solid $secondary-color;
+          border-bottom: 3px solid $secondary-color;
         }
       }
     }
