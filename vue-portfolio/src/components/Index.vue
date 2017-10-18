@@ -24,12 +24,13 @@
       <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
     </ul>
     <div id="content">
-      <div class="skills" v-if="this.activeItem === 'skills'">
+      <transition name="slide-fade" mode="out-in">
+      <div class="skills" v-if="this.activeItem === 'skills'" key="skills">
         <h2>These are my skills.</h2>
         <div class="skills-icons">
           <div>
             <img src="../assets/images/api.png">
-            <span>API</span>
+            <span>APIs</span>
           </div>
           <div>
             <img src="../assets/images/bootstrap.png">
@@ -77,12 +78,13 @@
           </div>
         </div>
       </div>
-      <div v-else-if="this.activeItem === 'web'">
+      <div v-else-if="this.activeItem === 'web'" key="web">
         Web
       </div>
-      <div v-else>
+      <div v-else key="graphic">
         Graphic Design
       </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -137,9 +139,8 @@ export default {
 
   #content {
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     h2 {
@@ -201,7 +202,7 @@ export default {
   .tabs {
     display: flex;
     width: 97vw;
-    margin: 2% 0;
+    margin: 1.6% 0;
     color: $accent-color;
     li {
       list-style-type: none;
