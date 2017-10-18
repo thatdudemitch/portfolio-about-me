@@ -9,8 +9,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 $main-color: #0D0D0D;
 $secondary-color: #FFF;
-$accent-color: #7C7C7C;
-$accent-color-secondary: #8870FF;
+$accent-color: #DADADA;
+$accent-color-secondary: #11156D;
 $behance-color: #0A44C7;
 $linkedin-color: #1178B2;
 $github-color: #F3CAB3;
@@ -28,6 +28,20 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+li {
+  list-style-type: none;
+  transition: 200ms;
+}
+
+h2 {
+  font-family: $font-stack-secondary;
+  color: $accent-color-secondary;
+}
+
+div {
+  transition: 500ms;
 }
 
 .vue-typer {
@@ -54,10 +68,11 @@ a {
 }
 
 .tabs {
-  display: inline;
+  border-bottom: 1px solid $accent-color;
 }
 
 .active {
   color: $accent-color-secondary !important;
-  border-bottom: 4px solid $accent-color-secondary !important;
+  border-bottom: 3px solid $accent-color-secondary !important;
+  font-weight: bold;
 }
