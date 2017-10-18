@@ -28,16 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$main-color: #0D0D0D;
-$secondary-color: #FFF;
-$accent-color: #6C6C6C;
-$behance-color: #0A44C7;
-$linkedin-color: #1178B2;
-$github-color: #F3CAB3;
-$gmail-color: #FF2222;
-
-$font-stack-logo: 'Monoton', cursive;
-$font-stack-tertiary: 'Helvetica', sans-serif;
+@import '../assets/scss/main.scss';
 
   footer {
     width: 100%;
@@ -75,7 +66,7 @@ $font-stack-tertiary: 'Helvetica', sans-serif;
 
   .copyright {
     span {
-      font-family: $font-stack-tertiary;
+      font-family: $font-stack-primary;
       font-weight: lighter;
       letter-spacing: 0.1vh;
       color: $accent-color;

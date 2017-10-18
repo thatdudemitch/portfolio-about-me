@@ -30,12 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$main-color: #0D0D0D;
-$secondary-color: #FFF;
-$accent-color: #7C7C7C;
-
-$font-stack-logo: 'Monoton', cursive;
-$font-stack-tertiary: 'Helvetica', sans-serif;
+@import '../assets/scss/main.scss';
 
   nav {
     width: 100%;
@@ -45,11 +40,13 @@ $font-stack-tertiary: 'Helvetica', sans-serif;
     justify-content: space-between;
     align-items: center;
     transition: 300ms;
+    z-index: 999;
   }
 
   .logo {
     font-size: 5vh;
     margin-left: 30px;
+    outline: none;
     a {
       font-family: $font-stack-logo;
     }
