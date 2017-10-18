@@ -31,7 +31,7 @@ export default {
 @import '../assets/scss/main.scss';
 
   footer {
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     position: relative;
     display: flex;
@@ -39,6 +39,7 @@ export default {
     align-items: center;
     flex-direction: column;
     color: $main-color;
+    background: $accent-color;
     transition: 300ms;
     a {
       color: $main-color;
@@ -69,7 +70,7 @@ export default {
       font-family: $font-stack-primary;
       font-weight: lighter;
       letter-spacing: 0.1vh;
-      color: $accent-color;
+      color: $main-color;
       font-size: 1.7vh;
     }
   }
