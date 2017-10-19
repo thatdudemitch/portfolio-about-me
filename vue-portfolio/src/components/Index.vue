@@ -3,7 +3,7 @@
     <div class="splash-container">
       <div class="description" :style="{ opacity: activeOpacity }">
         <vue-typer
-          :text='["Hi, I am Mitchel Severe and welcome to my portfolio. I enjoy implementing design with programming to create clean and attractive websites and web apps. I spend everyday refining my skills on technologies while learning how to implement new technologies to my reptoire."]'
+          :text='["Hi, I am Mitchel Severe and welcome to my portfolio. I enjoy implementing design with programming to create clean and attractive websites. I spend everyday refining my skills while learning how to implement new technologies to my reptoire."]'
           :repeat='0'
           :shuffle='false'
           initial-action='typing'
