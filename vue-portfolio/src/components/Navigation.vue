@@ -1,5 +1,5 @@
 <template>
-  <nav :class="[scrollPosition > 820 ? 'scroll-nav' : 'top-nav']">
+  <nav :class="[scrollPosition > nextSection ? 'scroll-nav' : 'top-nav']">
     <div class="logo">
       <span><router-link to="/">{{ logo }}</router-link></span>
     </div>
@@ -19,6 +19,7 @@ export default {
     return {
       logo: 'M',
       scrollPosition: 0,
+      nextSection: 0,
     };
   },
   mounted() {
@@ -27,6 +28,8 @@ export default {
   methods: {
     updateNavScroll() {
       this.scrollPosition = window.scrollY;
+      this.nextSection = document.querySelector('#anchor').offsetTop;
+      console.log(this.nextSection);
     },
   },
 };
