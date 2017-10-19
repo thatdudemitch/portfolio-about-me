@@ -276,7 +276,7 @@ export default {
         width: 16%;
         padding: 2%;
         text-align: center;
-        filter: grayscale(100%);
+        filter: grayscale(85%);
         color: $accent-color;
         &:hover {
           filter: grayscale(0%);
