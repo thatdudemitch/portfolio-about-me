@@ -16,8 +16,8 @@
           <i class="fa fa-angle-double-down" aria-hidden="true"></i>
         </a>
     </div>
-    <div id="anchor"></div>
-    <ul id="tabs">
+    <div id="tabs"></div>
+    <ul class="tabs">
       <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
       <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
       <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
@@ -166,8 +166,34 @@
           </div>
         </div>
       </div>
-      <div v-else key="graphic">
+      <div class="graphic" v-else key="graphic">
         <h2>My curated designs.</h2>
+        <div class="designs">
+          <div class="design-one">
+            <img src="../assets/images/cg-logo.jpg">
+          </div>
+          <div class="design-two">
+            <img src="../assets/images/theresa.jpg">
+          </div>
+          <div class="design-three">
+            <img src="../assets/images/crmbc.jpg">
+          </div>
+          <div class="design-four">
+            <img src="../assets/images/stpa.jpg">
+          </div>
+          <div class="design-five">
+            <img src="../assets/images/porn.jpg">
+          </div>
+          <div class="design-six">
+            <img src="../assets/images/ebiz-logo.jpg">
+          </div>
+          <div class="design-seven">
+            <img src="../assets/images/take5.jpg">
+          </div>
+          <div class="design-eight">
+            <img src="../assets/images/swc.jpg">
+          </div>
+        </div>
       </div>
       </transition>
     </div>
@@ -255,7 +281,7 @@ export default {
       font-size: 6vh;
     }
   }
-  #anchor {
+  #tabs {
     height: 10vh;
     position: absolute;
     margin-top: -9.8vh;
@@ -295,7 +321,7 @@ export default {
       }
     }
   }
-  
+
   .web {
     display: flex;
     align-items: center;
@@ -342,6 +368,54 @@ export default {
     }
   }
 
+  .graphic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    .designs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      @each $num, $color in $design-colors {
+        .design-#{$num} {
+          width: 20%;
+          margin: 0.5%;
+          height: 30vh;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color;
+          .overlay {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
+          }
+        }
+        img {
+          position: absolute;
+          width: 52%;
+          box-shadow: 0 5px 5px -6px $main-color;
+        }
+      }
+    }
+  }
+
   .info {
     display: flex;
     align-items: center;
@@ -374,7 +448,7 @@ export default {
     }
   }
 
-  #tabs {
+  .tabs {
     display: flex;
     width: 97vw;
     margin: 1.6% 0;

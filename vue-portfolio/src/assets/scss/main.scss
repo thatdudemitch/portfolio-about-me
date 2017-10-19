@@ -24,6 +24,16 @@ $thumbnail-colors: (
   'five': #BED9DE,
   'six': #292E40,
   );
+$design-colors: (
+  'one': #F5EDED,
+  'two': #BBBBBD,
+  'three': #D9CEC7, 
+  'four': #E6E8E1,
+  'five': #DCDDE0,
+  'six': #706F77,
+  'seven': #AA8C91,
+  'eight': #FFF0D6,
+  );
 
 $font-stack-logo: 'Monoton', cursive;
 $font-stack-primary: 'Helvetica', sans-serif;
@@ -76,7 +86,7 @@ h2 {
   }
 }
 
-#tabs {
+.tabs {
   border-bottom: 1px solid $accent-color;
 }
 
