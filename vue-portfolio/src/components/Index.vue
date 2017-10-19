@@ -88,8 +88,8 @@
                 <span><strong>Technologies Used: </strong>HTML5, CSS3, Javascript</span>
                 <p>Car dodge is an infinite driver where the objective is to get as many points before you crash.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://github.com/thatdudemitch/car-dodger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://thatdudemitch.github.io/car-dodger/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -102,8 +102,8 @@
                 <span><strong>Technologies Used: </strong>HTML5, CSS3, Javascript</span>
                 <p>Javascript calculator inspired by Giphy.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://github.com/thatdudemitch/giphyCalc" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://thatdudemitch.github.io/giphyCalc/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -114,11 +114,10 @@
               <div class="info">
                 <h3>Wordsmith</h3>
                 <span><strong>Technologies Used: </strong>Node, Express, PostgreSQL, Pug, APIs</span>
-                <p>Wordsmith is a elegant lyrics based website from most of your favorite
-artists around the globe. The lyrics are powered by Genius.</p>
+                <p>Wordsmith is a elegant lyrics based website from most of your favorite artists around the globe. The lyrics are powered by Genius.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://github.com/thatdudemitch/wordsmith" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://evening-coast-89238.herokuapp.com/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -131,8 +130,8 @@ artists around the globe. The lyrics are powered by Genius.</p>
                 <span><strong>Technologies Used: </strong>React, Node, Express, PostgreSQL, Socket.io</span>
                 <p>Code Share is a platform that provide groups an ability to code together without being together in one place. The app has an option to work on coding challenges which include tests or to work/share individual code collaboratively.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://github.com/thatdudemitch/code_share" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://mysterious-anchorage-20913.herokuapp.com/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -145,8 +144,8 @@ artists around the globe. The lyrics are powered by Genius.</p>
                 <span><strong>Technologies Used: </strong>HTML5, CSS3</span>
                 <p>Client prototype for skin care and aromatherapy products. Melanina Essentials™ takes a curative approach to beauty, discovering wholesome formulas that promote wellbeing, and improved health.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://github.com/thatdudemitch/melaninaEssentials" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://thatdudemitch.github.io/melaninaEssentials/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -159,8 +158,8 @@ artists around the globe. The lyrics are powered by Genius.</p>
                 <span><strong>Technologies Used: </strong>React, Firebase, APIs</span>
                 <p>A simple CRUD Weather App.</p>
                 <div class="icons">
-                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                  <a href="https://git.generalassemb.ly/mitchelsevere/HW_U03_D06_React-Weather-2/tree/master/react-weather/src" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="http://not-another-weather-app.bitballoon.com/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
