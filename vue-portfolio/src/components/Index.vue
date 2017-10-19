@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <div class="splash-container">
-      <div class="description">
+      <div class="description" :style="{ opacity: activeOpacity }">
         <vue-typer
           :text='["Hi, I am Mitchel Severe and welcome to my portfolio. I enjoy implementing design with programming to create clean and attractive websites and web apps. I spend everyday refining my skills on technologies while learning how to implement new technologies to my reptoire."]'
           :repeat='0'
@@ -18,16 +18,16 @@
         </a>
       </div>
     </div>
-    <ul class="tabs">
+    <ul id="tabs">
       <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
       <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
       <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
     </ul>
-    <div id="content">
+    <div class="content">
       <transition name="slide-fade" mode="out-in">
       <div class="skills" v-if="this.activeItem === 'skills'" key="skills">
         <h2>These are my skills.</h2>
-        <div class="skills-icons">
+        <div class="skills-icons" v-scroll-reveal>
           <div>
             <img src="../assets/images/api.png">
             <span>APIs</span>
@@ -78,11 +78,13 @@
           </div>
         </div>
       </div>
-      <div v-else-if="this.activeItem === 'web'" key="web">
-        Web
+      <div class="web" v-else-if="this.activeItem === 'web'" key="web">
+        <h2>Web apps built by me.</h2>
+        <div class="web-thumbnails" v-scroll-reveal>
+        </div>
       </div>
       <div v-else key="graphic">
-        Graphic Design
+        <h2>Curated designs from yours truly.</h2>
       </div>
       </transition>
     </div>
@@ -97,7 +99,12 @@ export default {
   data() {
     return {
       activeItem: 'skills',
+      scrollPosition: 0,
+      activeOpacity: 1,
     };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateFadeScroll);
   },
   methods: {
     isActive(menuItem) {
@@ -107,6 +114,30 @@ export default {
     setActive(menuItem) {
       console.log('clicked');
       this.activeItem = menuItem;
+    },
+    updateFadeScroll() {
+      this.scrollPosition = window.scrollY;
+      switch (true) {
+        case this.scrollPosition < 50:
+          this.activeOpacity = 1;
+          break;
+        case this.scrollPosition < 200:
+          this.activeOpacity = 0.7;
+          break;
+        case this.scrollPosition < 500:
+          this.activeOpacity = 0.4;
+          break;
+        case this.scrollPosition < 520:
+          this.activeOpacity = 0.2;
+          break;
+        case this.scrollPosition < 550:
+          this.activeOpacity = 0;
+          break;
+        default:
+          break;
+      }
+      // sr
+      console.log(this.scrollPosition);
     },
   },
   components: {
@@ -137,7 +168,7 @@ export default {
     letter-spacing: 0.5px;
   }
 
-  #content {
+  .content {
     width: 100vw;
     height: 85vh;
     display: flex;
@@ -199,7 +230,7 @@ export default {
     }
   }
 
-  .tabs {
+  #tabs {
     display: flex;
     width: 97vw;
     margin: 1.6% 0;
