@@ -12,9 +12,18 @@ $secondary-color: #FFF;
 $accent-color: #DADADA;
 $accent-color-secondary: #11156D;
 $behance-color: #0A44C7;
+$safari-color: #2CAEFA;
 $linkedin-color: #1178B2;
 $github-color: #F3CAB3;
 $gmail-color: #FF2222;
+$thumbnail-colors: (
+  'one': #D7D6DB,
+  'two': #F7A3A2,
+  'three': #F8CAC1, 
+  'four': #82BBC2,
+  'five': #BED9DE,
+  'six': #292E40,
+  );
 
 $font-stack-logo: 'Monoton', cursive;
 $font-stack-primary: 'Helvetica', sans-serif;
@@ -32,6 +41,10 @@ a {
 
 li {
   list-style-type: none;
+  transition: 200ms;
+}
+
+i {
   transition: 200ms;
 }
 
@@ -65,6 +78,26 @@ h2 {
 
 #tabs {
   border-bottom: 1px solid $accent-color;
+}
+
+.fa-behance:hover {
+  color: $behance-color;
+}
+
+.fa-linkedin:hover {
+  color: $linkedin-color;
+}
+
+.fa-github:hover {
+  color: $github-color;
+}
+
+.fa-envelope-o:hover {
+  color: $gmail-color;
+}
+
+.fa-safari:hover {
+  color: $safari-color;
 }
 
 .active {

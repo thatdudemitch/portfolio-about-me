@@ -75,20 +75,4 @@ export default {
     }
   }
 
-  .fa-behance:hover {
-    color: $behance-color;
-  }
-
-  .fa-linkedin:hover {
-    color: $linkedin-color;
-  }
-
-  .fa-github:hover {
-    color: $github-color;
-  }
-
-  .fa-envelope-o:hover {
-    color: $gmail-color;
-  }
-
 </style>
