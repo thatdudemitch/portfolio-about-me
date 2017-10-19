@@ -4,7 +4,9 @@
       <span><router-link to="/">{{ logo }}</router-link></span>
     </div>
     <div class="link">
-      <router-link to="mitchel-severe-resume">View Resume</router-link>
+      <router-link to="mitchel-severe-resume">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+      </router-link>
     </div>
   </nav>
 </template>
@@ -19,10 +21,10 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
+    window.addEventListener('scroll', this.updateNavScroll);
   },
   methods: {
-    updateScroll() {
+    updateNavScroll() {
       this.scrollPosition = window.scrollY;
     },
   },
@@ -56,9 +58,8 @@ export default {
     margin-right: 30px;
     font-family: 'Helvetica', sans-serif;
     a {
-      height: 25px;
+      font-size: 4vh;
       transition: 100ms ease-in-out;
-      margin-bottom: 4px;
     }
   }
 
@@ -77,8 +78,11 @@ export default {
     } 
     .link {
       a {
+        display: inline-block;
+        transition: 500ms;
         &:hover {
-          border-bottom: 3px solid $accent-color-secondary; 
+          font-size: 5vh;
+          color: $accent-color-secondary;
         }
       }
     }
@@ -96,9 +100,12 @@ export default {
     }
     .link {
       a {
-      color: $secondary-color;  
+      display: inline-block;
+      color: $secondary-color;
+      transition: 500ms;  
         &:hover {
-          border-bottom: 3px solid $secondary-color;
+          font-size: 5vh;
+          color: $secondary-color;
         }
       }
     }
