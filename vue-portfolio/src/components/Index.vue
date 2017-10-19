@@ -82,21 +82,88 @@
         <div class="web-thumbnails">
           <div class="thumbnail-one">
             <img src="../assets/images/cardodge.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>Car Dodge</h3>
+                <span><strong>Technologies Used: </strong>HTML5, CSS3, Javascript</span>
+                <p>Car dodge is an infinite driver where the objective is to get as many points before you crash.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="thumbnail-two">
             <img src="../assets/images/giphy.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>Giphy Calculator</h3>
+                <span><strong>Technologies Used: </strong>HTML5, CSS3, Javascript</span>
+                <p>Javascript calculator inspired by Giphy.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="thumbnail-three">
             <img src="../assets/images/wordsmith.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>Wordsmith</h3>
+                <span><strong>Technologies Used: </strong>Node, Express, PostgreSQL, Pug, APIs</span>
+                <p>Wordsmith is a elegant lyrics based website from most of your favorite
+artists around the globe. The lyrics are powered by Genius.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="thumbnail-four">
             <img src="../assets/images/codeshare.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>Code Share&trade;</h3>
+                <span><strong>Technologies Used: </strong>React, Node, Express, PostgreSQL, Socket.io</span>
+                <p>Code Share is a platform that provide groups an ability to code together without being together in one place. The app has an option to work on coding challenges which include tests or to work/share individual code collaboratively.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="thumbnail-five">
             <img src="../assets/images/melanina.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>Melanina Essentials&trade;</h3>
+                <span><strong>Technologies Used: </strong>HTML5, CSS3</span>
+                <p>Client prototype for skin care and aromatherapy products. Melanina Essentials™ takes a curative approach to beauty, discovering wholesome formulas that promote wellbeing, and improved health.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="thumbnail-six">
             <img src="../assets/images/weather.png">
+            <div class="overlay">
+              <div class="info">
+                <h3>React Weather</h3>
+                <span><strong>Technologies Used: </strong>React, Firebase, APIs</span>
+                <p>A simple CRUD Weather App.</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-safari" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,15 +318,21 @@ export default {
           background-color: $color;
           .overlay {
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: 0;
-            bottom: 0;
             left: 0;
-            right: 0;
             height: 100%;
             width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: #008CBA;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
           }
         }
         img {
@@ -267,6 +340,23 @@ export default {
           box-shadow: 0 5px 5px -6px $main-color;
         }
       }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2.5vh;
+    padding: 0 7%;
+    text-align: center;
+    span {
+      font-size: 1.5vh;
+    }
+    i {
+      font-size: 4vh;
+      padding: 0 10%;
+      color: $main-color;
     }
   }
 
