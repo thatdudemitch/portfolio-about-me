@@ -39,7 +39,7 @@ export default {
     align-items: center;
     flex-direction: column;
     color: $main-color;
-    background: $accent-color;
+    background: #EFEFEF;
     transition: 300ms;
     a {
       color: $main-color;
