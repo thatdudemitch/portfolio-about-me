@@ -4,7 +4,7 @@
       <span><router-link to="/">{{ logo }}</router-link></span>
     </div>
     <div class="link">
-      <a href="https://mitchelsevere.tech/src/assets/MitchelSevereResume.pdf">
+      <a href="https://drive.google.com/file/d/0Bwwf_h3JrlvTQktyQ0JRd19oQzA/view?usp=sharing" target="_blank">
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
       </a>
     </div>
