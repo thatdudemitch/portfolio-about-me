@@ -12,10 +12,11 @@
           caret-animation='smooth'>
         </vue-typer>
       </div> 
-        <a class="arrow" href="#tabs">
+        <a class="arrow" href="#anchor">
           <i class="fa fa-angle-double-down" aria-hidden="true"></i>
         </a>
     </div>
+    <div id="anchor"></div>
     <ul id="tabs">
       <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
       <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
@@ -78,11 +79,29 @@
       </div>
       <div class="web" v-else-if="this.activeItem === 'web'" key="web">
         <h2>Web apps built by me.</h2>
-        <div class="web-thumbnails" v-scroll-reveal>
+        <div class="web-thumbnails">
+          <div class="thumbnail-one">
+            <img src="../assets/images/cardodge.png">
+          </div>
+          <div class="thumbnail-two">
+            <img src="../assets/images/giphy.png">
+          </div>
+          <div class="thumbnail-three">
+            <img src="../assets/images/wordsmith.png">
+          </div>
+          <div class="thumbnail-four">
+            <img src="../assets/images/codeshare.png">
+          </div>
+          <div class="thumbnail-five">
+            <img src="../assets/images/melanina.png">
+          </div>
+          <div class="thumbnail-six">
+            <img src="../assets/images/weather.png">
+          </div>
         </div>
       </div>
       <div v-else key="graphic">
-        <h2>Curated designs from yours truly.</h2>
+        <h2>My curated designs.</h2>
       </div>
       </transition>
     </div>
@@ -170,6 +189,12 @@ export default {
       font-size: 6vh;
     }
   }
+  #anchor {
+    height: 10vh;
+    position: absolute;
+    margin-top: -9.8vh;
+    z-index: -999;
+  }
 
   .skills {
     display: flex;
@@ -205,6 +230,46 @@ export default {
     }
   }
   
+  .web {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .web-thumbnails {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      @each $num, $color in $thumbnail-colors {
+        .thumbnail-#{$num} {
+          width: 30%;
+          margin: 0.5%;
+          height: 30vh;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color;
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+          }
+        }
+        img {
+          width: 75%;
+          box-shadow: 0 5px 5px -6px $main-color;
+        }
+      }
+    }
+  }
+
   .arrow {
     position: absolute;
     bottom: 0;
