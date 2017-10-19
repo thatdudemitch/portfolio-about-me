@@ -11,12 +11,10 @@
           :type-delay='100'
           caret-animation='smooth'>
         </vue-typer>
-      </div>
-      <div class="arrow"> 
-        <a href="#content">
+      </div> 
+        <a class="arrow" href="#tabs">
           <i class="fa fa-angle-double-down" aria-hidden="true"></i>
         </a>
-      </div>
     </div>
     <ul id="tabs">
       <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
@@ -108,11 +106,9 @@ export default {
   },
   methods: {
     isActive(menuItem) {
-      console.log('item is active', this.activeItem);
       return this.activeItem === menuItem;
     },
     setActive(menuItem) {
-      console.log('clicked');
       this.activeItem = menuItem;
     },
     updateFadeScroll() {
@@ -136,8 +132,6 @@ export default {
         default:
           break;
       }
-      // sr
-      console.log(this.scrollPosition);
     },
   },
   components: {
@@ -148,12 +142,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
-
   .splash-container {
     width: 100vw;
     height: 100vh;
     background: $main-color;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,16 +209,14 @@ export default {
     position: absolute;
     bottom: 0;
     font-size: 6vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    a {
-      color: $secondary-color;
-      z-index: 99;
-      &:hover {
-        color: $accent-color-secondary;
-      }
+    color: $secondary-color;
+    opacity: 0.5;
+    transition: 500ms;
+    &:hover {
+      opacity: 1;
     }
   }
 
