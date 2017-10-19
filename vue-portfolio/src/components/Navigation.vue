@@ -1,17 +1,18 @@
 <template>
-  <nav :class="[scrollPosition > 720 ? 'scroll-nav' : 'top-nav']">
+  <nav :class="[scrollPosition > 820 ? 'scroll-nav' : 'top-nav']">
     <div class="logo">
       <span><router-link to="/">{{ logo }}</router-link></span>
     </div>
     <div class="link">
-      <router-link to="mitchel-severe-resume">
+      <a href="https://mitchelsevere.tech/src/assets/MitchelSevereResume.pdf">
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-      </router-link>
+      </a>
     </div>
   </nav>
 </template>
 
 <script>
+
 export default {
   name: 'Navigation',
   data() {
@@ -79,7 +80,7 @@ export default {
     .link {
       a {
         display: inline-block;
-        transition: 500ms;
+        transition: 300ms;
         &:hover {
           font-size: 5vh;
           color: $accent-color-secondary;
@@ -102,7 +103,7 @@ export default {
       a {
       display: inline-block;
       color: $secondary-color;
-      transition: 500ms;  
+      transition: 300ms;  
         &:hover {
           font-size: 5vh;
           color: $secondary-color;
