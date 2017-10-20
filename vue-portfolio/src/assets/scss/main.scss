@@ -38,6 +38,10 @@ $design-colors: (
 $font-stack-logo: 'Monoton', cursive;
 $font-stack-primary: 'Helvetica', sans-serif;
 $font-stack-secondary: 'Playfair Display', serif;
+#app {
+  display: flex;
+  flex-direction: column;
+}
 
 body {
   font-family: $font-stack-primary;

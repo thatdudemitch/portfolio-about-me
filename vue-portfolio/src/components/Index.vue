@@ -407,16 +407,18 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     .web-thumbnails {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
+      height: 60vh;
       @each $num, $color in $thumbnail-colors {
         .thumbnail-#{$num} {
           width: 30%;
           margin: 0.5%;
-          height: 30vh;
+          height: 50%;
           position: relative;
           display: flex;
           justify-content: center;
@@ -454,16 +456,18 @@ export default {
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    height: 100vh;
     .designs {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
+      height: 60vh;
       @each $num, $color in $design-colors {
         .design-#{$num} {
           width: 20%;
           margin: 0.5%;
-          height: 30vh;
+          height: 50%;
           position: relative;
           display: flex;
           justify-content: center;
@@ -575,9 +579,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
+  .content {
+    height: 315.2vh;
+  }
+
   .web {
-    overflow: scroll;
+    height: 100%;
     .web-thumbnails {
+      height: 100vh;
       @each $num, $color in $thumbnail-colors {
         .thumbnail-#{$num} {
           width: 100%;
@@ -592,8 +601,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .graphic {
-    overflow: scroll;
+    height: 100%;
     .designs {
+      height: 74.7vh;
       @each $num, $color in $design-colors {
         .design-#{$num} {
           width: 100%;
@@ -604,7 +614,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
           }
         }
         img {
-          width: 34%;
+          width: 40%;
         }
       }
     }
