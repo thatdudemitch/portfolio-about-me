@@ -12,7 +12,7 @@
           caret-animation='smooth'>
         </vue-typer>
       </div> 
-        <a class="arrow" href="#anchor">
+        <a class="arrow" href="#tabs">
           <i class="fa fa-angle-double-down" aria-hidden="true"></i>
         </a>
     </div>
