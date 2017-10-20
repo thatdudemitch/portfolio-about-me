@@ -28,7 +28,7 @@ export default {
   methods: {
     updateNavScroll() {
       this.scrollPosition = window.scrollY;
-      this.nextSection = document.querySelector('#anchor').offsetTop;
+      this.nextSection = document.querySelector('#tabs').offsetTop;
       console.log(this.nextSection);
     },
   },
