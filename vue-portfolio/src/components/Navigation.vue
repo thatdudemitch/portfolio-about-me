@@ -29,7 +29,6 @@ export default {
     updateNavScroll() {
       this.scrollPosition = window.scrollY;
       this.nextSection = document.querySelector('#tabs').offsetTop;
-      console.log(this.nextSection);
     },
   },
 };
@@ -39,7 +38,7 @@ export default {
 @import '../assets/scss/main.scss';
 
   nav {
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     position: fixed;
     display: flex;

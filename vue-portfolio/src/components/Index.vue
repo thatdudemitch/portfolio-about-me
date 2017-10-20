@@ -3,7 +3,7 @@
     <div class="splash-container">
       <div class="description" :style="{ opacity: activeOpacity }">
         <vue-typer
-          :text='["Hi, I am Mitchel Severe and welcome to my portfolio. I enjoy implementing design with programming to create clean and attractive websites. I spend everyday refining my skills while learning how to implement new technologies to my reptoire."]'
+          :text='["Hi, I am Mitchel Severe and welcome to my portfolio. I enjoy implementing design with programming to create clean, attractive websites. I spend everyday refining my skills while learning how to implement new technologies to my reptoire."]'
           :repeat='0'
           :shuffle='false'
           initial-action='typing'
@@ -304,6 +304,7 @@ export default {
     },
     updateFadeScroll() {
       this.scrollPosition = window.scrollY;
+      this.nextSection = document.querySelector('#tabs').offsetTop;
       switch (true) {
         case this.scrollPosition < 50:
           this.activeOpacity = 1;
@@ -317,7 +318,7 @@ export default {
         case this.scrollPosition < 520:
           this.activeOpacity = 0.2;
           break;
-        case this.scrollPosition < 550:
+        case this.nextSection < this.scrollPosition:
           this.activeOpacity = 0;
           break;
         default:
@@ -541,4 +542,100 @@ export default {
       cursor: pointer;
     }
   }
+
+@media only screen
+and (max-device-width: 750px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .description {
+    width: 80%;
+    font-size: 3vh;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .content {
+    h2 {
+      font-size: 4vh;
+    }
+  }
+
+  .skills {
+    .skills-icons {
+      width: 80%;
+      div {
+        width: 22%;
+        &:focus {
+          filter: grayscale(0%);
+          color: $main-color;
+        }
+        span {
+          font-size: 1.5vh;
+        }
+      }
+    }
+  }
+
+  .web {
+    overflow: scroll;
+    .web-thumbnails {
+      @each $num, $color in $thumbnail-colors {
+        .thumbnail-#{$num} {
+          width: 100%;
+          &:focus {
+            .overlay {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .graphic {
+    overflow: scroll;
+    .designs {
+      @each $num, $color in $design-colors {
+        .design-#{$num} {
+          width: 100%;
+          &:focus {
+            .overlay {
+              opacity: 1;
+            }
+          }
+        }
+        img {
+          width: 34%;
+        }
+      }
+    }
+  }
+
+  .info {
+    line-height: 2.5vh;
+    padding: 0 7%;
+    text-align: center;
+    span {
+      font-size: 1.5vh;
+    }
+    h3 {
+      font-size: 2.6vh;
+    }
+    p {
+      font-size: 1.8vh;
+    }
+    i {
+      font-size: 4vh;
+    }
+  }
+
+  .tabs {
+    justify-content: center;
+    width: 95.5%;
+    li {
+      font-size: 2.5vh;
+      height: 65px;
+      margin: 2% 4% 0;
+    }
+  }
+}
 </style>

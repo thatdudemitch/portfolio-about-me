@@ -75,4 +75,12 @@ export default {
     }
   }
 
+@media only screen
+and (max-device-width: 750px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+    height: 20vh;
+  }
+}
+
 </style>
