@@ -1,6 +1,6 @@
 # Portfolio
 *Portfolio can be viewed [here](https://thatdudemitch.github.io/portfolio-about-me/)*
-![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/images/screenshot.png)
+![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/vue-portfolio/src/assets/images/screenshot.png)
 
 ## Technologies Used
 
