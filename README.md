@@ -1,5 +1,5 @@
 # Portfolio
-*Portfolio can be viewed [here](https://thatdudemitch.github.io/portfolio-about-me/)*
+*Portfolio Site [here](https://mitchelsevere.tech)*
 ![Image](https://github.com/thatdudemitch/portfolio-about-me/blob/master/vue-portfolio/src/assets/images/screenshot.png)
 
 ## Technologies Used
