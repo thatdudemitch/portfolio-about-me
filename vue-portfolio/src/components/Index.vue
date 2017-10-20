@@ -79,7 +79,7 @@
       </div>
       <div class="web" v-else-if="this.activeItem === 'web'" key="web">
         <h2>Web apps built by me.</h2>
-        <div class="web-thumbnails">
+        <div class="web-thumbnails" v-scroll-reveal>
           <div class="thumbnail-one">
             <img src="../assets/images/cardodge.png">
             <div class="overlay">
@@ -158,7 +158,7 @@
                 <span><strong>Technologies Used: </strong>React, Firebase, APIs</span>
                 <p>A simple CRUD Weather App.</p>
                 <div class="icons">
-                  <a href="https://git.generalassemb.ly/mitchelsevere/HW_U03_D06_React-Weather-2/tree/master/react-weather/src" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="https://git.generalassemb.ly/mitchelsevere/HW_U03_D06_React-Weather-2/tree/master/react-weather" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                   <a href="http://not-another-weather-app.bitballoon.com/" target="_blank"><i class="fa fa-safari" aria-hidden="true"></i></a>
                 </div>
               </div>
@@ -168,30 +168,110 @@
       </div>
       <div class="graphic" v-else key="graphic">
         <h2>My curated designs.</h2>
-        <div class="designs">
+        <div class="designs" v-scroll-reveal>
           <div class="design-one">
             <img src="../assets/images/cg-logo.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Chase Greatness&trade;</h3>
+                <span>Logo Design</span>
+                <p>Chase Greatness logo.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802415/Chase-Greatness-logo" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-two">
             <img src="../assets/images/theresa.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Hotel Theresa</h3>
+                <span>Branding</span>
+                <p>Hotel Theresa poster for the Harlem Project.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57801705/Harlem-Brand-Project" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-three">
             <img src="../assets/images/crmbc.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Creative Revolution Media&trade;</h3>
+                <span>Branding</span>
+                <p>Business cards for Creative Revolution Media.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802265/Creative-Revolution-Media-Business-Cards" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-four">
             <img src="../assets/images/stpa.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Smoke The Pain Away</h3>
+                <span>Graphic Design</span>
+                <p>Album artwork for single, "Smoke The Pain Away" by J. Lamour.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802553/Smoke-The-Pain-Away-album-artwork" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-five">
             <img src="../assets/images/porn.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Pornography Seminar</h3>
+                <span>Graphic Design</span>
+                <p>Flyer for the seminar on pornography awareness.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802827/Pornography-Seminar-flyer" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-six">
             <img src="../assets/images/ebiz-logo.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>eBizJapan</h3>
+                <span>Logo Design</span>
+                <p>Prototype logo for eBizJapan.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802055/ebizjapan-prototype-logo" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-seven">
             <img src="../assets/images/take5.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Take 5</h3>
+                <span>Graphic Design</span>
+                <p>Flyer for the Take 5 special at La Caye Restaurant.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802493/Take-5-flyer" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="design-eight">
             <img src="../assets/images/swc.jpg">
+            <div class="overlay">
+              <div class="info">
+                <h3>Spring Worship Concert</h3>
+                <span>Graphic Design</span>
+                <p>Flyer for the Spring Worship Concert '13.</p>
+                <div class="icons">
+                  <a href="https://www.behance.net/gallery/57802373/Spring-Concert-13" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
