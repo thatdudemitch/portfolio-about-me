@@ -19,8 +19,8 @@
     <div id="tabs"></div>
     <ul class="tabs">
       <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
-      <li to="#" :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
-      <li to="#" :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
+      <li :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
+      <li :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
     </ul>
     <div class="content">
       <transition name="slide-fade" mode="out-in">

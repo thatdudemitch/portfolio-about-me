@@ -6,42 +6,34 @@
 
 * HTML5
 * CSS3
+* Vue.js
 
 
 ## Keyframes Used For H1
 
-```
-/* Span on name w/ keyframes */
-#name {
-    color: #ff6052;
-    font-family: 'Pathway Gothic One', sans-serif;
-    letter-spacing: 8px;
-    word-spacing: -8px;
-    font-size: 5em;
-    font-weight: bold;
-    animation: hue 5s infinite;
-}
 
-@keyframes hue {
-    0% {
-        color: #ff6052;
-    }
-    33% {
-        color: #ffbf05;
-    }
-    66% {
-        color: #15cd37;
-    }
-    99% {
-        color: #ff6052;
-    }
-}
+```html
+<!-- Have tabs change on click -->
+<ul class="tabs">
+  <li :class="{ active: isActive('skills') }" @click="setActive('skills')">Skills</li>
+  <li :class="{ active: isActive('web') }" @click="setActive('web')">Web Apps</li>
+  <li :class="{ active: isActive('graphic') }" @click="setActive('graphic')">Graphic Design</li>
+</ul>
+
+<div class="skills" v-if="this.activeItem === 'skills'" key="skills">
+    <!-- content -->
+</div>
+<div class="web" v-else-if="this.activeItem === 'web'" key="web">
+    <!-- content -->
+</div>
+<div class="graphic" v-else key="graphic">
+    <!-- content -->
+</div>
 ```
 
 ## Future Improvements
 
-* Responsive Design
-* JavaScript Interactivity
+* None at the moment
 
 ### Created By
 `Mitchel Severe`
