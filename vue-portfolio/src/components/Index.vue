@@ -354,10 +354,11 @@ export default {
 
   .content {
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10vh;
     h2 {
       font-size: 6vh;
     }
@@ -371,16 +372,18 @@ export default {
 
   .skills {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
     .skills-icons {
-      width: 40%;
+      width: 45%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       div {
-        width: 16%;
-        padding: 2%;
+        width: 15%;
+        padding: 3%;
         text-align: center;
         filter: grayscale(85%);
         color: $accent-color;
@@ -418,7 +421,7 @@ export default {
         .thumbnail-#{$num} {
           width: 30%;
           margin: 0.5%;
-          height: 50%;
+          height: 70%;
           position: relative;
           display: flex;
           justify-content: center;
@@ -444,7 +447,7 @@ export default {
           }
         }
         img {
-          width: 75%;
+          width: 85%;
           box-shadow: 0 5px 5px -6px $main-color;
         }
       }
@@ -467,7 +470,7 @@ export default {
         .design-#{$num} {
           width: 20%;
           margin: 0.5%;
-          height: 50%;
+          height: 70%;
           position: relative;
           display: flex;
           justify-content: center;
@@ -494,7 +497,7 @@ export default {
         }
         img {
           position: absolute;
-          width: 52%;
+          width: 75%;
           box-shadow: 0 5px 5px -6px $main-color;
         }
       }
@@ -580,16 +583,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .content {
-    height: 315.2vh;
+    height: 100%;
+    margin-bottom: 10vh;
   }
 
   .web {
-    height: 100%;
+    height: 245vh;
     .web-thumbnails {
       height: 100vh;
       @each $num, $color in $thumbnail-colors {
         .thumbnail-#{$num} {
           width: 100%;
+          height: 40vh;
           &:focus {
             .overlay {
               opacity: 1;
@@ -601,12 +606,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .graphic {
-    height: 100%;
+    height: 326vh;
     .designs {
       height: 74.7vh;
       @each $num, $color in $design-colors {
         .design-#{$num} {
           width: 100%;
+          height: 40vh;
           &:focus {
             .overlay {
               opacity: 1;
