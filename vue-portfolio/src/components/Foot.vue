@@ -33,14 +33,12 @@ export default {
   footer {
     width: 100vw;
     height: 30vh;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: $main-color;
     background: #EFEFEF;
-    transition: 300ms;
     a {
       color: $main-color;
     }
