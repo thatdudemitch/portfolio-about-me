@@ -7,9 +7,9 @@
       <span>&copy; {{ year }} &middot; mitchelsevere.tech  &middot; Mitchel Severe</span>
     </div>
     <div class="links">
-      <router-link to="/github"><i class="fa fa-github" aria-hidden="true"></i></router-link>
-      <router-link to="/behance"><i class="fa fa-behance" aria-hidden="true"></i></router-link>
-      <router-link to="/linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></router-link>
+      <a href="https://github.com/thatdudemitch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.behance.net/mitchelsevere" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/misevere/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
       <a href="mailto:mitchelsevere@gmail.com?Subject=I%20Came%20Across%20Your%20Portfolio" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
     </div>
   </footer>
