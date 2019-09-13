@@ -9,8 +9,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 $main-color: #0D0D0D;
 $secondary-color: #FFF;
-$accent-color: #DADADA;
+$accent-color: #afafaf;
 $accent-color-secondary: #11156D;
+$lt-gray: #efefef;
 $behance-color: #0A44C7;
 $safari-color: #2CAEFA;
 $linkedin-color: #1178B2;
@@ -91,7 +92,7 @@ h2 {
 }
 
 .tabs {
-  border-bottom: 1px solid $accent-color;
+  border-bottom: 3px solid $lt-gray;
 }
 
 .fa-behance:hover {
